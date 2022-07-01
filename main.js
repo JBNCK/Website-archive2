@@ -3,7 +3,7 @@ function onload() {
     console.log("set all variables.")
 }
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 40) {
+    if ($(window).scrollTop() >= 1) {
         $('.navbar-desktop').css('background','black');
         $('.navbar-desktop').css('opacity','90%');
     } else {

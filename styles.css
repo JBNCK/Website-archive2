@@ -1,0 +1,73 @@
+:root {
+    --text-color: #151515;
+    --bg-color: #f6f6f6;
+    --link-color: #0481ff;
+}
+
+html {
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+}
+main {
+    margin: 0;
+    background-color: var(--bg-color);
+}
+a {
+    text-decoration: none;
+}
+
+
+.navbar-desktop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.4s;
+    color: white;
+    display: inline-block;
+    align-items: flex-end;
+}
+.navbar-title {
+    font-family: Secular One;
+    margin-left: 5%;
+    display: inline-block;
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 8.5px;
+}
+.navbar-item {
+    position: relative;
+    display: inline;
+    float: right;
+    margin-top: 12px;
+    padding: 10px;
+    border: white 2px solid;
+    border-radius: 24px;
+    margin-left: 10px;
+}
+.navbar-item-right {
+    margin-right: 5%;
+}
+.navbar-item-lang {
+    border: none;
+    margin-top: 11px;
+}
+.dropdown-content-lang {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background: white;
+    border: 3px solid white;
+    padding: 16px;
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 16px;
+}
+.dropdown-content-lang a {
+    color: var(--text-color);
+}
+.navbar-item-lang:hover .dropdown-content-lang {
+    display: block;
+}

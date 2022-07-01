@@ -3,9 +3,9 @@ function onload() {
     console.log("set all variables.")
 }
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 1) {
+    if ($(window).scrollTop() >= 5) {
         $('.navbar-desktop').css('background','black');
-        $('.navbar-desktop').css('opacity','90%');
+        $('.navbar-desktop').css('opacity','80%');
     } else {
         $('.navbar-desktop').css('background','transparent');
     }

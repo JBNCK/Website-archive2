@@ -1,7 +1,9 @@
 :root {
     --text-color: #151515;
-    --bg-color: #f6f6f6;
+    --bg-color: white;
+    --bg-color-grey: #f6f6f6;
     --link-color: #0481ff;
+    --lang-dropdown-pos: 2%;
 }
 
 html {
@@ -14,10 +16,40 @@ body {
 main {
     margin: 0;
     background-color: var(--bg-color);
+
 }
 a {
     text-decoration: none;
 }
+footer {
+    background-color: #151515;
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+footer a {
+    color: white;
+}
+main h1 {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+main h2 {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+main h3 {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+main p {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 
 
 .navbar-desktop {
@@ -28,6 +60,7 @@ a {
     color: white;
     display: inline-block;
     align-items: flex-end;
+    z-index: 1;
 }
 .navbar-title {
     font-family: Secular One;
@@ -46,13 +79,19 @@ a {
     border: white 2px solid;
     border-radius: 24px;
     margin-left: 10px;
+    transition: all .2s;
+}
+.navbar-item:hover {
+    color: black;
+    background-color: white;
 }
 .navbar-item-right {
     margin-right: 5%;
 }
 .navbar-item-lang {
-    border: none;
+    border: 0px solid;
     margin-top: 11px;
+    border-radius: 0px;
 }
 .dropdown-content-lang {
     position: absolute;
@@ -61,13 +100,19 @@ a {
     background: white;
     border: 4px solid white;
     padding: 16px;
-    margin-top: 8px;
-    border: 2px solid white;
+    margin-top: 10px;
     border-radius: 24px;
-    right: 5%;
+    right: -25px;
+}
+.navbar-item-lang:hover {
+    background-color: transparent;
 }
 .dropdown-content-lang a {
     color: var(--text-color);
+    transition: all .2s;
+}
+.dropdown-content-lang a:hover {
+    color: #0481ff;
 }
 .navbar-item-lang:hover .dropdown-content-lang {
     display: block;
@@ -75,4 +120,102 @@ a {
 .banner {
     object-fit: cover;
     height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.grey-box {
+    background-color: var(--bg-color-grey);
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.banner-text {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    text-align: left;
+    color: white;
+    padding: 0;
+    max-width: 400px;
+    vertical-align: middle;
+}
+.banner-text hr {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: #ff0000;
+    height: 1px;
+    margin-bottom: 14px;
+
+}
+.banner-text h1 {
+    padding: 0;
+    margin: 0;
+    font-size: xx-large;
+    padding-bottom: 12px;
+}
+.banner-text p {
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    word-break: normal;
+    margin-bottom: 20px;
+}
+.banner-button {
+    color: black;
+    padding: 10px;
+    border: white 2px solid;
+    border-radius: 24px;
+    background-color: white;
+    display: inline-block;
+    transition: all .2s;
+    margin-right: 6px;
+}
+.banner-button:hover {
+    color: white;
+    background: transparent;
+}
+.banner-button-transparent {
+    color: white;
+    padding: 10px;
+    border: white 2px solid;
+    border-radius: 24px;
+    display: inline-block;
+    transition: all .2s;
+}
+.banner-button-transparent:hover {
+    color: black;
+    background-color: white;
+}
+.h1-color-change {
+    display: inline;
+}
+.side-by-side-div {
+    width: 38%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+}
+.vertical-line {
+    display: inline-block;
+    border: 0.2px solid #303030;
+    height: 200px;
+    margin-top: 15px;
+}
+.side-by-side-div li {
+    list-style-type: none;
+    padding: 2px;
+    padding-left: 0;
+}
+.bottom-banner {
+    background-color: red;
+    float: left;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
 }

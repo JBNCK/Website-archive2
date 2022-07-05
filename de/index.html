@@ -9,6 +9,13 @@
     </head>
     <body onload="onload()">
         <header>
+            <div id="mobile-menu-id" class="mobile-menu">
+                <div id="menu-content-id" class="menu-content">
+                    <a>Startseite</a><hr>
+                    <a>Projekte</a><hr>
+                    <a>Über mich</a>
+                </div>
+            </div>
             <div class="navbar-desktop">
                 <img height="45px" class="navbar-title" src="../media/jan_biernacik.png">
                 <div class="navbar-item navbar-item-lang navbar-item-right">
@@ -22,7 +29,17 @@
                 <a class="navbar-item">Projekte</a>
                 <a class="navbar-item">Startseite</a>
             </div>
-            <div class="navbar-mobile"></div>
+            <div class="navbar-mobile">
+                <img height="45px" class="navbar-title" src="../media/jan_biernacik.png">
+                <div class="navbar-item navbar-item-lang navbar-item-right">
+                    <span><img height="26px" src="../media/lang_icon.png"></span>
+                    <div id="dropdown_lang" class="dropdown-content-lang">
+                        <a href="#">German</a><br><br>
+                        <a href="../en/">English</a>
+                    </div>
+                </div>
+                <img class="navbar-item-menu" onclick="menu()" height="20px" src="../media/menu_icon.png">
+            </div>
         </header>
         <main>
             <div class="banner-box">
@@ -34,6 +51,7 @@
                     <a class="banner-button">Übersicht</a>
                     <a class="banner-button-transparent">Über mich</a>
                 </div>
+                <img class="banner-photo" src="../media/profile_sample.png">
             </div>
             <h3>Willkommen auf meiner Website!</h3>
             <p>Ich bin 14 Jahre alt und beschäftige mich in meiner Freizeit gerne mit Webentwicklung, welche ich mir selber beigebracht habe. Außerdem spiele ich Tennis und übe Sportschießen aus. Ich komme aus Polen aber lebe derzeit in Hamburg. Ich spreche fließend Deutsch, Polnisch, Englisch sowie etwas Spanisch.</p>
@@ -41,11 +59,12 @@
                 <h2>Ich hab ganix gemacht</h2>
                 <p>lorem ipsum</p>
             </div>
-
+            <h3>Fortinaiti la babajee</h3>
+            <p>babajee</p>
             </main>
-            <div class="bottom-banner">
+            <!--<div class="bottom-banner">
                 <p>Notice: This is a prototype and not a finished product. Don't expect anything to work properly. Also keep in mind that everything can be subject to change.</p>
-            </div>
+            </div>-->
         <footer><center>
             <div class="side-by-side-div">
                 <h3>Rechtliches</h3>

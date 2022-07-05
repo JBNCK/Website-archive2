@@ -6,9 +6,9 @@ function onload() {
 $(window).scroll(function () {
     if ($(window).scrollTop() >= 8) {
         $('.navbar-desktop').css('background','black');
-        $('.navbar-desktop').css('opacity','85%');
+        $('.navbar-desktop').css('opacity','90%');
         $('.navbar-mobile').css('background','black');
-        $('.navbar-mobile').css('opacity','85%');
+        $('.navbar-mobile').css('opacity','90%');
     } else {
         $('.navbar-desktop').css('background','transparent');
         $('.navbar-mobile').css('background','transparent');
@@ -37,4 +37,8 @@ function menu() {
         }, 100);
         placeholder_var = 0;
     }
+}
+function close_bottom_banner() {
+    var element = document.getElementById("bottom-banner-id");
+    element.setAttribute("style", "display: none;");
 }

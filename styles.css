@@ -248,7 +248,7 @@ main p {
     padding-left: 0;
 }
 .bottom-banner {
-    background-color: red;
+    background-color: #151515;
     float: left;
     width: 100%;
     bottom: 0;
@@ -256,6 +256,12 @@ main p {
     padding-left: 5%;
     padding-right: 5%;
     color: white;
+}
+.bottom-banner p {
+    margin-right: 36px;
+}
+.bottom-banner button {
+    margin-bottom: 20px;
 }
 .mobile-menu {
     background-color: #121212;
@@ -283,13 +289,13 @@ main p {
 }
 .mobile-menu hr {
     border: none;
-    background: #ff0000;
+    background: #242424;
     height: 1px;
     width: 98%;
 }
 .mobile-menu a {
     margin-left: 5%;
-    padding: 16px;
+    padding: 24px;
     font-size: larger;
     font-weight: bolder;
 }

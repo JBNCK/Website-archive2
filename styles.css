@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 :root {
-    --text-color: #151515;
-    --bg-color: white;
-    --bg-color-grey: #f6f6f6;
+    --text-color: white;
+    --bg-color: #000000;
+    --bg-color-grey: #000000;
     --link-color: #0481ff;
     --lang-dropdown-pos: 2%;
     --text-margin-mobile: 16px;
 }
 
+h1 {
+    font-family: Righteous;
+    color: #ff0000;
+    font-size: 48px;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
 html {
     color: var(--text-color);
     font-family: Arial, Helvetica, sans-serif;
@@ -23,7 +32,7 @@ a {
     text-decoration: none;
 }
 footer {
-    background-color: #151515;
+    background-color: #050505;
     color: white;
     margin: 0;
     padding-top: 14px;
@@ -46,6 +55,10 @@ main h3 {
     padding-left: 20%;
     padding-right: 20%;
 }
+main h4 {
+    padding-left: 20%;
+    padding-right: 20%;
+}
 main p {
     padding-left: 20%;
     padding-right: 20%;
@@ -53,8 +66,22 @@ main p {
 
 
 
-
-
+.paragraph-div {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.paragraph {
+    font-weight: lighter;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.inline-h1 {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+}
 .navbar-mobile {
     position: fixed;
     top: 0;
@@ -93,6 +120,7 @@ main p {
     border-radius: 24px;
     margin-left: 10px;
     transition: all .2s;
+    backdrop-filter: blur(8px);
 }
 .navbar-item-menu {
     position: relative;
@@ -130,7 +158,7 @@ main p {
     background-color: transparent;
 }
 .dropdown-content-lang a {
-    color: var(--text-color);
+    color: black;
     transition: all .2s;
 }
 .dropdown-content-lang a:hover {
@@ -173,8 +201,9 @@ main p {
 .banner-text h1 {
     padding: 0;
     margin: 0;
-    font-size: xx-large;
+    font-size: 48px;
     padding-bottom: 12px;
+    color: white;
 }
 .banner-text p {
     padding: 0;
@@ -192,6 +221,7 @@ main p {
     display: inline-block;
     transition: all .2s;
     margin-right: 6px;
+    backdrop-filter: blur(8px);
 }
 .banner-button:hover {
     color: white;
@@ -204,6 +234,7 @@ main p {
     border-radius: 24px;
     display: inline-block;
     transition: all .2s;
+    backdrop-filter: blur(8px);
 }
 .banner-button-transparent:hover {
     color: black;
@@ -224,6 +255,10 @@ main p {
     vertical-align: middle;
     background-color: white;
     object-fit: cover;
+}
+.banner-arrow-down {
+    bottom: 8vh;
+    position: absolute;
 }
 .h1-color-change {
     display: inline;
@@ -299,6 +334,66 @@ main p {
     font-size: larger;
     font-weight: bolder;
 }
+.carousel {
+    display: inline-block;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 0;
+    width: 60%;
+}
+.carousel-item {
+    display: inline-block;
+    width: 32%;
+    padding: 0;
+    top: 50%;
+    transform: translateY(0%);
+}
+.carousel-item p {
+    margin: 0;
+    padding: 0;
+}
+.carousel-item img {
+    padding: 0;
+    margin: 0;
+}
+.image-and-text-showcase-left {
+    margin: 0;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: inline-block;
+    padding: 0;
+}
+.image-and-text-showcase-left-div {
+    position: absolute;
+    display: inline-block;
+    padding: 0;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+.image-and-text-showcase-left-div p{
+    padding: 0;
+}
+.image-and-text-showcase-left-div h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.image-and-text-showcase-left img {
+    border-radius: 0 48px 48px 0;
+}
+.image-and-text-showcase-left-div hr {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: #ff0000;
+    height: 1px;
+    margin-bottom: 14px;
+
+}
+
+
+
 
 
 
@@ -324,9 +419,17 @@ main p {
         padding-left: var(--text-margin-mobile);
         padding-right: var(--text-margin-mobile);
     }
+    main h4 {
+        padding-left: var(--text-margin-mobile);
+        padding-right: var(--text-margin-mobile);
+    }
     main p {
         padding-left: var(--text-margin-mobile);
         padding-right: var(--text-margin-mobile);
+    }
+    .paragraph-div {
+        margin-left: var(--text-margin-mobile);
+        margin-right: var(--text-margin-mobile);
     }
     .vertical-line {
         display: none;

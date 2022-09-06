@@ -8,6 +8,9 @@
     --text-margin-mobile: 16px;
 }
 
+html {
+    background-color: #000000;
+}
 h1 {
     font-family: Righteous;
     color: #ff0000;
@@ -101,6 +104,9 @@ main p {
     display: inline-block;
     align-items: flex-end;
     z-index: 2;
+}
+.navbar-desktop a {
+    color: white;
 }
 .navbar-title {
     font-family: Secular One;
@@ -358,8 +364,8 @@ main p {
 }
 .image-and-text-showcase-left {
     margin: 0;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: inline-block;
     padding: 0;
 }
@@ -367,9 +373,8 @@ main p {
     position: absolute;
     display: inline-block;
     padding: 0;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 .image-and-text-showcase-left-div p{
     padding: 0;
@@ -391,7 +396,6 @@ main p {
     margin-bottom: 14px;
 
 }
-
 
 
 
@@ -473,5 +477,23 @@ main p {
 @media only screen and (max-width: 1200px) {
     .banner-photo {
         display: none;
+    }
+    .image-and-text-showcase-left-div {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30pxpx;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .image-and-text-showcase-left-div {
+        display: block;
+        position: relative;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 8px;
+    }
+    .image-and-text-showcase-left img {
+        display: block;
+        width: 80%;
     }
 }

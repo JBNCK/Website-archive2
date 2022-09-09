@@ -35,11 +35,11 @@ a {
     text-decoration: none;
 }
 footer {
-    background-color: #050505;
+    background-color: #000000;
     color: white;
     margin: 0;
     padding-top: 14px;
-    padding-bottom: 30px;
+    padding-bottom: 34px;
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -486,9 +486,9 @@ main p {
         display: none;
     }
     .image-and-text-showcase-left-div {
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 30pxpx;
+        margin-left: var(--text-margin-mobile);
+        margin-right: var(--text-margin-mobile);
+        margin-top: 30px;
     }
 }
 @media only screen and (max-width: 1000px) {

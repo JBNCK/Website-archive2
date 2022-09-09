@@ -341,6 +341,11 @@ main p {
     padding: 24px;
     font-size: larger;
     font-weight: bolder;
+    color: white;
+    transition: all .2s;
+}
+.mobile-menu a:hover {
+    color: #ff0000;
 }
 .carousel {
     display: inline-block;

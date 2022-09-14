@@ -47,15 +47,15 @@
                 <div class="banner-text">
                     <h1 class="h1-color-change">Moin, ich bin Jan<h1 class="h1-color-change" style="color: #ff0000;">!</h1></h1>
                     <hr>
-                    <p>Ich bin hobbymäßiger Webentwickler und Sportschütze. Zudem beschäftige ich mich mit der Modifizierung von Android™. Willkommen auf meiner Website!</p>
+                    <p>Ich bin hobbymäßiger Webentwickler und Sportschütze. Zudem beschäftige ich mich mit der Modifizierung von Android. Willkommen auf meiner Website!</p>
                     <a onclick="document.getElementById('projekte_uebersicht').scrollIntoView({behavior: 'smooth'})" class="banner-button">Übersicht</a>
-                    <a class="banner-button-transparent">Über mich</a>
+                    <a onclick="document.getElementById('ich_uebersicht').scrollIntoView({behavior: 'smooth'})" class="banner-button-transparent">Über mich</a>
                 </div>
                 
                 <!--<img class="banner-photo" src="../media/profile_sample.png">-->
             </div>
-            <center><img src="../media/arrow_down_icon.png" class="banner-arrow-down" width="30px"></center>
-            <br>
+            <center><img onclick="document.getElementById('ich_uebersicht').scrollIntoView({behavior: 'smooth'})" src="../media/arrow_down_icon.png" class="banner-arrow-down" width="30px"></center>
+            <br id="ich_uebersicht">
             <br>
             <br>
             <div class="paragraph-div">
@@ -70,9 +70,10 @@
             <div class="image-and-text-showcase-left">
                 <img src="../media/android-wide.jpg" style="display: inline-block;" width="40%">
                 <div class="image-and-text-showcase-left-div">
-                    <h1 style="display: inline-block;">Android™-Modding</h1>
+                    <h1 style="display: inline-block;">Android-Modding</h1>
                     <hr>
                     <p>Zur Zeit beschäftige ich mich am meisten mit Android-Modding. Ich mag es mit der Software von Android-Handys rumzuspielen und sie so zu gestalten, wie sie mir gefällt. Am meisten achte ich dabei auf Privatsphäre (so wenig tracking wie möglich), sowie lange Akkulaufzeit. Ich benutze oftmals zum Setup mein eigenes Debloat- und Modding-Tool, welches kein root benötigt und mit dem man sein Samsung-Handy debloaten und anschließend so einrichten kann, wie es einem gefällt (Aktuell stehen die Presets Google Pixel UI, AOSP und stock One UI zur verfügung). Weiteres im GitHub-Repo. </p>
+                    <a href="https://github.com/JBNCK/One-UI-Experience_dev" class="button">Zu mienem Debloater</a>
                 </div>
             </div>
             <div class="image-and-text-showcase-left">
@@ -81,6 +82,7 @@
                     <h1 style="display: inline-block;">Weitere kleine Projekte</h1>
                     <hr>
                     <p>Außerem habe ich noch ein Paar kleine Nebenprojekte auf meinem GitHub, wie zum beispiel eine Terminal Notizen App, für Linux-Nutzer, die nur einen Standalone Window Manager benutzen. Diese Website war eigentlich auch nur ein kleines Nebenprojekt und zum Teil ist es das immer noch. Ich entwickle diese Website um meine Webentwicklungskenntnisse zu verbessern. Der Quelltext ist ebenfalls unter GitHub verfügbar.</p>
+                    <a class="button" href="https://github.com/JBNCK">Zu meinem GitHub</a>
                 </div>
             </div>
             <br>

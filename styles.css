@@ -33,6 +33,7 @@ main {
 }
 a {
     text-decoration: none;
+    color: white;
 }
 footer {
     background-color: #000000;
@@ -68,10 +69,28 @@ main p {
 }
 
 
-
+.button {
+    position: relative;
+    display: inline;
+    float: right;
+    padding: 10px;
+    border: white 2px solid;
+    border-radius: 24px;
+    transition: all .2s;
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+}
 .paragraph-div {
     margin-left: 20%;
     margin-right: 20%;
+}
+.main_paragraph-div {
+    margin-left: 0;
+    margin-right: 0;
 }
 .paragraph {
     font-weight: lighter;
@@ -79,6 +98,9 @@ main p {
     padding: 0;
     margin: 0;
     white-space: nowrap;
+}
+.main_paragraph {
+    font-weight: lighter;
 }
 .inline-h1 {
     display: inline-block;
@@ -230,6 +252,7 @@ main p {
     transition: all .2s;
     margin-right: 6px;
     backdrop-filter: blur(8px);
+    cursor: pointer;
 }
 .banner-button:hover {
     color: white;
@@ -243,6 +266,7 @@ main p {
     display: inline-block;
     transition: all .2s;
     backdrop-filter: blur(8px);
+    cursor: pointer;
 }
 .banner-button-transparent:hover {
     color: black;

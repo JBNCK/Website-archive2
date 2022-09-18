@@ -99,6 +99,12 @@ main p {
     margin: 0;
     white-space: nowrap;
 }
+.paragraph_hr {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #151515;
+    border: solid .2px #151515;
+}
 .main_paragraph {
     font-weight: lighter;
 }
@@ -477,6 +483,10 @@ main p {
     footer {
         padding-left: var(--text-margin-mobile);
         padding-right: var(--text-margin-mobile);
+    }
+    .paragraph_hr {
+        margin-left: var(--text-margin-mobile);
+        margin-right: var(--text-margin-mobile);
     }
 }
 @media only screen and (max-width: 700px) {

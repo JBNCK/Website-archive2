@@ -1,0 +1,16 @@
+main {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+a {
+    display: block;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    main {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}

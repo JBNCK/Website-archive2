@@ -1,71 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="../styles.css">
-        <meta name="viewport" content="width=device-width" ,="" initial-scale="1.0">
         <title>Jan Biernacik - Projekte</title>
-        <script src="../jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="../stylesheet.css">
+        <meta name="viewport" content="width=device-width" ,="" initial-scale="1.0">
+        <meta name="theme-color" content="#191b24" >
+        <script src="../jquery.js"></script>
         <script src="../main.js"></script>
     </head>
     <body onload="onload()">
         <header>
-            <div id="mobile-menu-id" class="mobile-menu">
-                <div id="menu-content-id" class="menu-content">
-                    <a href="../de/">Startseite</a><hr>
-                    <a href="projekte">Projekte</a><hr>
-                    <a href="kontakt">Über mich</a>
+            <div id="menu" class="menu">
+                <div id="menu_content" class="menu_content">
+                    <a href="../de/">Startseite</a>
+                    <hr>
+                    <a href="projekte">Projekte</a>
+                    <hr>
+                    <a href="kontakt">Kontakt</a>
+                    <img alt="close_icon" src="../media/close_icon.png" class="menu_content_close_button" onclick="menu()">
                 </div>
             </div>
-            <div class="navbar-desktop">
-                <img height="45px" class="navbar-title" src="../media/jan_biernacik.png">
-                <div class="navbar-item navbar-item-lang navbar-item-right">
-                    <span><img height="26px" src="../media/lang_icon.png"></span>
-                    <div id="dropdown_lang" class="dropdown-content-lang">
-                        <a href="#">German</a><br><br>
-                        <a href="../en/">English</a>
-                    </div>
+            <div class="navbar navbar_desktop">
+                <img class="navbar_logo" alt="logo" src="../media/jan_biernacik.png">
+                <div class="navbar_links_box">
+                    <a href="../de/"><div class="navbar_links">
+                        Startseite
+                    </div></a>
+                    <a href="projekte"><div class="navbar_links navbar_links_current">
+                        Projekte
+                    </div></a>
+                    <a href="kontakt"><div class="navbar_links">
+                        Kontakt
+                    </div></a>
                 </div>
-                <a class="navbar-item" href="kontakt">Kontakt</a>
-                <a class="navbar-item" href="projekte">Projekte</a>
-                <a class="navbar-item" href="../de/">Startseite</a>
+                <img onclick="window.location.href = 'https://www.github.com/JBNCK'" class="navbar_icon" alt="github_logo" src="../media/github_logo.png">
             </div>
-            <div class="navbar-mobile" id="navbar-mobile-id">
-                <img height="45px" class="navbar-title" src="../media/jan_biernacik.png">
-                <div class="navbar-item navbar-item-lang navbar-item-right">
-                    <span><img height="26px" src="../media/lang_icon.png"></span>
-                    <div id="dropdown_lang" class="dropdown-content-lang">
-                        <a href="#">German</a><br><br>
-                        <a href="../en/">English</a>
-                    </div>
-                </div>
-                <img class="navbar-item-menu" onclick="menu()" height="20px" src="../media/menu_icon.png">
+            <div class="navbar navbar_mobile">
+                <img class="navbar_logo" alt="logo" src="../media/jan_biernacik.png">
+                <img src="../media/menu_icon.png" alt="Menu icon" onclick="menu()" class="navbar_icon navbar_icon_mobile_menu">
+                <img onclick="window.location.href = 'https://www.github.com/JBNCK'" class="navbar_icon navbar_icon_mobile_github" alt="github_logo" src="../media/github_logo.png">
             </div>
         </header>
         <main>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="main_paragraph-div">
-                <h1 class="main_paragraph" style="color: white;">Diese Seite wurde noch nicht Fertiggestellt, ich arbeite jedoch dran.</h1>
+            <div class="banner_box">
+                <img alt="banner" src="../media/banner_small_projects.jpg" class="banner_small">
+                <div class="banner_small_text">
+                    <a class="banner_small_text_header">Projekte</a>
+                </div>
             </div>
         </main>
-        <!--<footer><center>
-            <div class="side-by-side-div">
-                <h3>Rechtliches</h3>
-                <li><a>Datenschutz</a></li>
-                <li><a>Lizenz</a></li>
-                <li><a>Bilderquellen</a></li>
-            </div>
-            <div class="vertical-line"></div>
-            <div class="side-by-side-div">
-                <h3>Weiteres</h3>
-                <li><a>GitHub</a></li>
-                <li><a>XDA-Profil</a></li>
-                <li><a>Stylesheet herunterladen</a></li>
-            </div>
-        </center></footer>-->
+        <footer>
+
+        </footer>
     </body>
 </html>

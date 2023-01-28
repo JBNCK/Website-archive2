@@ -1,82 +1,108 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Jan Biernacik - Startseite</title>
-        <link rel="stylesheet" href="../stylesheet.css">
+        <link rel="stylesheet" href="../styles.css">
         <meta name="viewport" content="width=device-width" ,="" initial-scale="1.0">
-        <meta name="theme-color" content="#191b24" >
-        <script src="../jquery.js"></script>
+        <title>Jan Biernacik - Startseite</title>
+        <script src="../jquery-3.6.0.min.js"></script>
         <script src="../main.js"></script>
     </head>
     <body onload="onload()">
         <header>
-            <div id="menu" class="menu">
-                <div id="menu_content" class="menu_content">
-                    <a href="../de/">Startseite</a>
-                    <hr>
-                    <a href="projekte">Projekte</a>
-                    <hr>
-                    <a href="kontakt">Kontakt</a>
-                    <img alt="close_icon" src="../media/close_icon.png" class="menu_content_close_button" onclick="menu()">
+            <div id="mobile-menu-id" class="mobile-menu">
+                <div id="menu-content-id" class="menu-content">
+                    <a href="../de/">Startseite</a><hr>
+                    <a href="projekte">Projekte</a><hr>
+                    <a href="kontakt">Über mich</a>
                 </div>
             </div>
-            <div class="navbar navbar_desktop">
-                <img class="navbar_logo" alt="logo" src="../media/jan_biernacik.png">
-                <div class="navbar_links_box">
-                    <a href="../de/"><div class="navbar_links navbar_links_current">
-                        Startseite
-                    </div></a>
-                    <a href="projekte"><div class="navbar_links">
-                        Projekte
-                    </div></a>
-                    <a href="kontakt"><div class="navbar_links">
-                        Kontakt
-                    </div></a>
+            <div class="navbar-desktop">
+                <img height="45px" class="navbar-title" src="../media/jan_biernacik.png">
+                <div class="navbar-item navbar-item-lang navbar-item-right">
+                    <span><img height="26px" src="../media/lang_icon.png"></span>
+                    <div id="dropdown_lang" class="dropdown-content-lang">
+                        <a href="#">German</a><br><br>
+                        <a href="../en/">English</a>
+                    </div>
                 </div>
-                <img onclick="window.location.href = 'https://www.github.com/JBNCK'" class="navbar_icon" alt="github_logo" src="../media/github_logo.png">
+                <a class="navbar-item" href="kontakt">Kontakt</a>
+                <a class="navbar-item" href="projekte">Projekte</a>
+                <a class="navbar-item" href="../de/">Startseite</a>
             </div>
-            <div class="navbar navbar_mobile">
-                <img class="navbar_logo" alt="logo" src="../media/jan_biernacik.png">
-                <img src="../media/menu_icon.png" alt="Menu icon" onclick="menu()" class="navbar_icon navbar_icon_mobile_menu">
-                <img onclick="window.location.href = 'https://www.github.com/JBNCK'" class="navbar_icon navbar_icon_mobile_github" alt="github_logo" src="../media/github_logo.png">
+            <div class="navbar-mobile" id="navbar-mobile-id">
+                <img height="45px" class="navbar-title" src="../media/jan_biernacik.png">
+                <div class="navbar-item navbar-item-lang navbar-item-right">
+                    <span><img height="26px" src="../media/lang_icon.png"></span>
+                    <div id="dropdown_lang" class="dropdown-content-lang">
+                        <a href="#">German</a><br><br>
+                        <a href="../en/">English</a>
+                    </div>
+                </div>
+                <img class="navbar-item-menu" onclick="menu()" height="20px" src="../media/menu_icon.png">
             </div>
         </header>
         <main>
-            <div class="banner_box">
-                <img alt="banner" src="../media/banner_darkened.jpg" class="banner">
-                <div class="banner_text">
-                    <a class="banner_text_header">Jan Biernacik</a>
-                    <a class="banner_text_subheader">Self-tought frontent web developer, linux enthusiast, android modder</a>
-                    
+            <div class="banner-box">
+                <img width="100%" class="banner" src="../media/sample_pic.jpg">
+                <div class="banner-text">
+                    <h1 class="h1-color-change">Moin, ich bin Jan<h1 class="h1-color-change" style="color: #ff0000;">!</h1></h1>
+                    <hr>
+                    <p>Ich bin hobbymäßiger Webentwickler und Sportschütze. Zudem beschäftige ich mich mit der Modifizierung von Android. Willkommen auf meiner Website!</p>
+                    <a onclick="document.getElementById('projekte_uebersicht').scrollIntoView({behavior: 'smooth'})" class="banner-button">Übersicht</a>
+                    <a onclick="document.getElementById('ich_uebersicht').scrollIntoView({behavior: 'smooth'})" class="banner-button-transparent">Über mich</a>
                 </div>
-                <img alt="arrow down" src="../media/arrow_down_icon.png" class="banner_icon_arrow_down">
+                
+                <!--<img class="banner-photo" src="../media/profile_sample.png">-->
             </div>
-            <div class="main_box">
+            <center><img onclick="document.getElementById('ich_uebersicht').scrollIntoView({behavior: 'smooth'})" src="../media/arrow_down_icon.png" class="banner-arrow-down" width="30px"></center>
+            <br id="ich_uebersicht">
+            <br>
+            <br>
+            <div class="paragraph-div">
+                <h4 class="paragraph"><h1 class="inline-h1">Moin!</h1> Ich bin 15 Jahre alt und beschäftige mich in meiner Freizeit gerne mit Webentwicklung, welche ich mir selbst beigebracht habe. Außerdem spiele ich Tennis und übe Sportschießen aus. Ich komme aus Polen, aber lebe derzeit in Hamburg. Ich spreche fließend Deutsch, Polnisch, Englisch sowie etwas Spanisch.</h4>
             </div>
-            <div class="main_stripe">
-                <h1>Ein wenig über mich</h1>
-                <p>Ich heiße Jan, bin 15 Jahre alt und lebe in Hamburg. Ich komme aus Polen und spreche desshalb 3 Sprachen fließend: Deutsch, Englisch und Polnisch. Zudem spreche ich etwas Spanisch, sowie minimal Russisch. Programmiersprachentechnisch kenne ich nur etwas Python, da ich mich vor allem auf die Webentwicklung, sowie auf Android-Modding spezialisiere, welche ich mir selber beibringe. Für Technik interessier ich mich schon seit Jahren, aber so richtig mit der Webentwicklung beschäfitge ich mich seit ungefähr 2 Jahren. Vor allem hilft mir diese Website dabei, meine Kenntnisse im Bereich Webentwicklung zu verbessern.</p>
-            </div>
-            <div class="main_box">
-                <h1>Projekte</h1>
-                <div class="image_grid">
-                    <div class="column">
-                        <img alt="CLINOTE" src="../media/clinote_demo.png" width="100%">
-                    </div>
-                    <div class="column">
-                        <img alt="Android" src="../media/android-wide.jpg" width="100%">
-                    </div>
-                    <div class="column">
-                        <img alt="UGLYFETCH" src="../media/uglyfetch_demo.jpg" width="100%">
-                    </div>
-                    <div class="column">
-                        <img alt="MORE" src="../media/weitere.png" width="100%">
-                    </div>
+            <br id="projekte_uebersicht">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="image-and-text-showcase-left">
+                <img src="../media/android-wide.jpg" style="display: inline-block;" width="40%">
+                <div class="image-and-text-showcase-left-div">
+                    <h1 style="display: inline-block;">Android-Modding</h1>
+                    <hr>
+                    <p>Zur Zeit beschäftige ich mich am meisten mit Android-Modding. Ich mag es mit der Software von Android-Handys rumzuspielen und sie so zu gestalten, wie sie mir gefällt. Am meisten achte ich dabei auf Privatsphäre (so wenig tracking wie möglich), sowie lange Akkulaufzeit. Ich benutze oftmals zum Setup mein eigenes Debloat- und Modding-Tool, welches kein root benötigt und mit dem man sein Samsung-Handy debloaten und anschließend so einrichten kann, wie es einem gefällt (Aktuell stehen die Presets Google Pixel UI, AOSP und stock One UI zur verfügung). Weiteres im GitHub-Repo. </p>
+                    <a href="https://github.com/JBNCK/One-UI-Experience_dev" class="button">Zu meinem Debloater</a>
                 </div>
             </div>
+            <div class="image-and-text-showcase-left">
+                <img src="../media/programming.jpg" style="display: inline-block;" width="40%">
+                <div class="image-and-text-showcase-left-div">
+                    <h1 style="display: inline-block;">Weitere kleine Projekte</h1>
+                    <hr>
+                    <p>Außerem habe ich noch ein Paar kleine Nebenprojekte auf meinem GitHub, wie zum beispiel eine Terminal Notizen App, für Linux-Nutzer, die nur einen Standalone Window Manager benutzen. Diese Website war eigentlich auch nur ein kleines Nebenprojekt und zum Teil ist es das immer noch. Ich entwickle diese Website um meine Webentwicklungskenntnisse zu verbessern. Der Quelltext ist ebenfalls unter GitHub verfügbar.</p>
+                    <a class="button" href="https://github.com/JBNCK">Zu meinem GitHub</a>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
         </main>
-        <footer>
-
-        </footer>
+        <footer><center>
+            <div class="side-by-side-div">
+                <h3>Rechtliches</h3>
+                <li><a href="../privacy">Datenschutz</a></li>
+                <li><a href="https://www.gnu.org/licenses/gpl-3.0.en.html">Lizenz</a></li>
+                <li><a href="../sources">Bilderquellen</a></li>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="side-by-side-div">
+                <h3>Weiteres</h3>
+                <li><a href="https://github.com/JBNCK">GitHub</a></li>
+                <li><a href="https://forum.xda-developers.com/m/janboygamer23.10369939/">XDA-Profil</a></li>
+                <li><a download href="../styles.css">Stylesheet herunterladen</a></li>
+            </div>
+        </center></footer>
     </body>
 </html>
